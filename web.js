@@ -7,14 +7,9 @@ app.get('/', function(request, response) {
 
      fs.readFile('index.html', function (err, data) {
 
-         if (err) console.log("caught error on read2");
+         if (err) throw err;
 
-//         if (err) throw err;
-
-
-         
-         response.send(data);
-//         response.send(data.toString('utf8', 0, data.length);
+         response.send(data.toString('utf8', 0, data.length));
 
      }); 
    
