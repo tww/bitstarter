@@ -5,9 +5,9 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
 
-     fs.readFile('/index.html', function (err, data) {
+     fs.readFile('index.html', function (err, data) {
 
-         if (err) console.log("caught error on read");
+         if (err) console.log("caught error on read2");
 
 //         if (err) throw err;
 
